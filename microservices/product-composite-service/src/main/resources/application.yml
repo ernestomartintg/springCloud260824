@@ -18,18 +18,18 @@ api:
     contact:
       name: NAME OF CONTACT
       url: URL TO CONTACT
-    email: contact@mail.com
+      email: contact@mail.com
 
   responseCodes:
     ok.description: OK
-    hadRequest.description: Bad Request, invalid format of the request. See response message for more information
+    badRequest.description: Bad Request, invalid format of the request. See response message for more information
     notFound.description: Not found, the specified id does not exist
     unprocessableEntity.description: Unprocessable entity, input parameters caused the processing to fail. See response message for more information
 
   product-composite:
     get-composite-product:
-      description: Returns a composite view of the specified product id
-      notes: |
+    description: Returns a composite view of the specified product id
+    notes: |
       #Normal response
       If the requested product id is found the method will return information regarding:
         1. Base product information
